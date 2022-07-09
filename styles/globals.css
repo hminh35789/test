@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+      
+/* .momal
+{
+ color: rgb(44, 38, 145);
+} */
+@import url('./annou.css');

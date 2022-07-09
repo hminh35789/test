@@ -1,0 +1,151 @@
+.header
+{
+    color: wheat;
+    background: greenyellow;
+    
+    
+}
+.title
+{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: -20px; */
+   
+    align-items: center;
+}
+.left
+{
+    width: 33.3333333%;
+    display: flex;
+    flex: 1;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.input
+{
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+}
+.inputI
+{
+    
+    border: none;
+}
+.right
+{
+    width: 33.333333%;
+    display: flex;
+    flex: 1;
+   
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.rightItem
+{
+    margin-left: 1%;
+}
+.center
+{
+    width: 33.333333%;
+    flex: 1;
+    cursor: pointer;
+}
+/* logo ỡ giữa*/
+.logo
+{
+    text-align: center;
+}
+/* trang thông báo ở trên màu xanh*/
+/* .announ
+{
+    background: lightskyblue;
+    color: beige;
+    display: flex;
+    justify-content: flex-end;
+} */
+/* mũi tên slider*/
+.arrowL
+{
+    background: #fff7f7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10px;
+    opacity: 0.5;
+}
+.arrowR
+{
+    background: #fff7f7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 10px;
+    opacity: 0.5;
+}
+.slider
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.wrap
+{
+    height: 100%;
+    display: flex;
+}
+.hinhanh{
+   flex: 1;
+}
+.img
+{
+   height: 100vh;
+   width: 80%;
+}
+.slide
+{
+    display: flex;
+    align-items: center;
+    /* height: 100vh;
+    width: 100vw; */
+}
+.info
+{   
+    flex: 1;
+  
+}
+@media only screen and (max-width: 600px) 
+{
+    .header 
+    {
+      background: lightblue;
+    }
+    .inputI
+{
+    
+    width: 50px;
+}
+.input
+{
+    margin-left: 5px;
+}
+}

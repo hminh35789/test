@@ -1,0 +1,15 @@
+
+.announ
+{
+    background: lightskyblue;
+    color: beige;
+    display: flex;
+    justify-content: flex-end;
+}
+.brand
+{
+    color: lightgoldenrodyellow
+}
+.grow{
+    flex-grow: 1;
+  }
