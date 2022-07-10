@@ -26,7 +26,7 @@ export default function Home() {
        <Header>
         
         </Header>
-      <Layout>
+      <Layout title='Ikiguy'>
         <div>
         <h1>Products</h1>
         <Grid container spacing={3}>
@@ -64,23 +64,7 @@ export default function Home() {
       {/* <Slider> </Slider> */}
       {/* <Slider /> */}
       
-      <AboutPage>
-        sadss
-      </AboutPage>
-   
-
-      <footer className='s'>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         All right reserved. Design by Mynz{' '}
-          <span className='s'>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+  
     </div>
   )
 }

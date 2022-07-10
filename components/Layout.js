@@ -1,6 +1,7 @@
 // import React from 'react'
 // import Head from 'next/head'
 import Announ from '../pages/announ'
+import Image from 'next/image'
 // function Layout({ children }) {
 //   return (
 //     <div>
@@ -19,14 +20,14 @@ import Announ from '../pages/announ'
 // export default Layout
 import React from 'react';
 import Head from 'next/head';
-import { AppBar, Toolbar, Typography, Container, Link } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Container, Link, Grid } from '@material-ui/core';
 import NextLink from 'next/link';
 
-export default function Layout({ children }) {
+export default function Layout({ title, children }) {
   return (
     <div>
       <Head>
-        <title>Next Amazona</title>
+       <title>{title ? `${title} - Next Amazona` : 'Next Amazona'}</title>
         <Announ></Announ>
       </Head>
       <AppBar position="static">
@@ -49,13 +50,25 @@ export default function Layout({ children }) {
               <Link className='brand'>Login</Link>
             </NextLink>
           </div>
-            
+         
         </Toolbar>
       </AppBar>
       <Container>{children}</Container>
       {/* <footer>
         <Typography>All rights reserved. Next Amazona.</Typography>
       </footer> */}
+         <footer className='footer'>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         All right reserved. Design by Mynz{' '}
+          <span className='s'>
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          </span>
+        </a>
+      </footer>
     </div>
   );
 }
